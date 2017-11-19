@@ -4,7 +4,7 @@ library(dplyr)
 
 name <- "Ace"
 
-input <- read.csv("allocation.csv", header = TRUE) %>%
+input <- read.csv("input/allocation.csv", header = TRUE) %>%
 	filter(Marker == name)
 
 n <- dim(input)[1]
